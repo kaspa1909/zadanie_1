@@ -2,10 +2,17 @@
 
 using namespace std;
 
+int czy_pierwsza(int a){
+    int test=1;
+
+    for(int i=0; i<a; i++){
+	if(a%i==0)test=0;
+    }
+    return test;
+}
+
 int main() {
-    int a, b;
-    cout << "Podaj liczbe calkowita ";
-    cin >> a >> b;
+    int a;
     int wyjscie;
     do {
         cout << endl;
