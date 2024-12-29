@@ -16,8 +16,16 @@ int main() {
         cout << "MENU" << endl;
         cout << "Podaj numer czynnosci, ktora chcesz wykonac" << endl;
         cout << "0. Wyjscie" << endl;
+	cout << "1. Silnia" <<endl;
         cin >> wyjscie;
-    } while(wyjscie != 0);
+    } while(wyjscie != 0 && wyjscie != 1);
+
+    if(wyjscie == 1){
+	cout << "Podaj liczbe naturanlna" << endl;
+	cin << a;
+	cout << "\nSilnia liczby " << a << " = " << silnia(a) <<endl;
+    }
+
     return 0;
 }
 
