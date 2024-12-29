@@ -2,10 +2,13 @@
 
 using namespace std;
 
+int silnia(int a){
+	if(a<=1) return 1;
+	else return a*silnia(a);
+}
+
 int main() {
-    int a, b;
-    cout << "Podaj liczbe calkowita ";
-    cin >> a >> b;
+    int a;
     int wyjscie;
     do {
         cout << endl;
