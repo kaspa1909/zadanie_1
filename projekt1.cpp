@@ -20,8 +20,17 @@ int main() {
         cout << "MENU" << endl;
         cout << "Podaj numer czynnosci, ktora chcesz wykonac" << endl;
         cout << "0. Wyjscie" << endl;
+	cout << "1. Czy pierwsza" << endl;
         cin >> wyjscie;
-    } while(wyjscie != 0);
+    } while(wyjscie != 0 && wyjscie != 1);
+
+    if(wyjscie==1){
+	cout << "\nPodaj liczbe naturanlna\n";
+	cin >> a;
+	cout<<"\nLiczba "<<a;
+	if(czy_pierwsza(a)!=1) cout << " nie";
+	cout<<" jest pierwsza\n";
+    }
     return 0;
 }
 
